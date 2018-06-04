@@ -292,4 +292,10 @@ CSS Grid layout for modern browsers:
 	.site {
 		max-width: none;
 	}
+
+	.main-area > * ,
+	.colophon {
+		display: grid;
+		grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+	}
 }
